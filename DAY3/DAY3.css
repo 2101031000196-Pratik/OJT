@@ -1,0 +1,47 @@
+
+.var
+{
+    color: red;
+}
+h1{
+    color:blue;
+}
+li{
+    color:green;
+}
+body{
+    background-color:lightgrey ;
+}
+table{
+    text-align: center;
+}
+.map
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+  }
+  .map
+  {width: 604px;
+    border: 5px solid darkred;}
+    .res{
+        width: 400px;
+    margin: 29px 124px;
+    }
+    #ch
+    {
+        margin:-94px 653px
+    }
+#m
+{
+    background-color:#c7a9e3;
+    border:5px solid azure;
+}
+#hh
+{
+    
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: indigo;
+}
