@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Overlay</title>
+    <style type="text/css">
+        .container-img
+        {
+            position: relative;
+            width: 300px;
+        }
+        .image
+        {
+            display: block;
+            width: 300px;
+            height: 400px;
+            transition: 1s;
+        }
+        .overlay
+        {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            opacity: 0;
+            transition: 1s;
+            background-color: blue;
+        }
+        .container-img:hover .overlay
+        {
+            opacity: 1;
+        }
+        .container-img:hover .image
+        {
+            transform: rotate(360deg);
+        }
+        .text
+        {
+            color: aqua;
+            font-size: 20px;
+            position:absolute;
+            top:  50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Image Overlay Effect</h2>
+    <div class="container-img">
+        <img src="C:\Users\HP\Desktop\raj\FAShion\237948a6d5088270501c2918a3b27d11.jpg" alt="Demo Image" class="image">
+        <div class="Overlay">
+            <div class="text">HELLO</div>
+        </div>
+    </div>
+</body>
+
+</html>
