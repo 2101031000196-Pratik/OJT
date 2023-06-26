@@ -1,0 +1,161 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"   />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"
+    type="text/css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    #R1 {
+      background-color: aqua;
+      height: 50px;
+      padding-top: 20px;
+      width: 98%;
+      padding-left: 2%;
+      margin-bottom: 10px;
+    }
+
+    header {
+      background-color: lightblue;
+      text-align: center;
+      padding: 2px;
+      font-size: 25px;
+      color: rgb(21, 58, 139);
+    }
+
+    nav {
+      float: left;
+      width: 30%;
+      height: 300px;
+      background: #fff;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .container-img {
+      position: relative;
+      width: 300px;
+    }
+
+    .image {
+      display: block;
+      width: 300px;
+      height: 400px;
+      transition: 1s;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      opacity: 0;
+      transition: 1s;
+      background-color: blue;
+    }
+
+    .container-img:hover .overlay {
+      opacity: 1;
+    }
+
+    .container-img:hover .image {
+      transform: rotate(360deg);
+    }
+
+    .text {
+      color: black;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #f1f1f1;
+      height: 400px;
+      color: red;
+    }
+
+    #h {
+      color: green;
+    }
+
+    footer {
+      background-color: lightblue;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    div.test {
+      white-space: nowrap;
+      width: 200px;
+      overflow: hidden;
+      border: 1px solid #000000;
+    }
+
+    div.test:hover {
+      overflow: visible;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div id="R1">
+      <i class="fa fa-user-secret fa-2x"></i>
+    </div>
+    <header>
+      <h2><i>Pratik Rai</i></h2>
+    </header>
+    <section>
+      <!--The <nav> element defines a set of navigation links.-->
+      <nav>
+        <ul>
+          <li><a href="C:\Users\HP\Desktop\196\html\OJT\OJT\DAY5\layout1.html">Home</a></li><br><br>
+          <li><a href="C:\Users\HP\Desktop\raj\Myself.txt">About Me</a></li><br><br>
+          <li><a href="C:\Users\HP\Desktop\196\html\OJT\OJT\Day6\form.html">Bootstrap</a></li><br><br>
+          <li><a href="C:\Users\HP\Desktop\196\html\OJT\OJT\DAY3\RESTAURANT.html">Website</a></li><br><br>
+        </ul>
+      </nav>
+      <!--The <article> element specifies independent, self-contained content.-->
+      <article>
+        <h1 id="h">Home</h1>
+        <p>This is all the work created by Rai Pratik in his 6 days.This includes concept of html,css and bootstrap</p>
+        <div class="test" style="text-overflow:ellipsis;">The concept of html gives body and CSS provides Design</div>
+        <div class="container-img">
+          <img src="C:\Users\HP\Desktop\shaadi\DSC_9898.JPG" style="height: 250px;width: 250px;" alt="Demo Image"
+            class="image">
+          <div class="Overlay">
+            <div class="text"><i class="fa fa-user-secret fa-2x"></i>
+              <p>Pratik rai<br>2101031000196<br>IT-B<br>SOCET</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <a href="C:\Users\HP\Desktop\196\html\OJT\OJT">Work</a>
+    </footer>
+</body>

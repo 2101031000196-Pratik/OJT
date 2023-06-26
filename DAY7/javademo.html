@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>JS</title>
+    
+    <script src="C:\Users\HP\Desktop\196\html\OJT\OJT\DAY7\javademo.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function demoInternalAlert()
+        {
+            alert("Internal Alert.");
+        }
+        function demoInternalConfirm() 
+        {
+            if (confirm("Are You Sure??"))
+             {
+                alert("Yesss");
+            }
+            else 
+            {
+                alert("NOOOOO");
+            }
+        }
+        function demoInternalPrompt()
+        {
+            var fname=prompt("Enter Firstname Here")
+            var lname=prompt("Enter Lastname Here")
+            alert(fname+" "+lname);
+        }
+        
+    </script>
+    <style type="text/css">
+        body
+        {
+            background-color: yellow;
+        }
+        div{
+            background-color: red;height: 300px;width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="D1">
+        Hello Students
+    </div>
+    <hr />
+    <input type="button" value="Alert Inline" onclick="alert('Hello Guys')" />&nbsp;&nbsp;
+    <input type="button" value="Confirm Inline" onclick="confirm('Are You sure??')" />&nbsp;&nbsp;
+    <input type="button" value="Prompt Inline" onclick="prompt('Enter FirstName Here..')" />&nbsp;&nbsp;
+    <hr />
+    <input type="button" value="Alert Internal" onclick="demoInternalAlert()" />&nbsp;&nbsp;
+    <input type="button" value="Confirm Internal" onclick="demoInternalConfirm()" />&nbsp;&nbsp;
+    <input type="button" value="Prompt Internal" onclick="demoInternalPrompt()" />&nbsp;&nbsp;
+    <hr/>
+    <input type="button" value="Prompt External" onclick="demoExternalPrompt()" />&nbsp;&nbsp;
+    <input type="button" value="Confirm External" onclick="demoExternalConfirm()" />&nbsp;&nbsp;
+    <input type="button" value="Alert External" onclick="demoExternalAlert()" />&nbsp;&nbsp;
+    <hr/>
+    <input type="button" value="Body Bg Green" onclick="bodyBGGreen()"/>&nbsp;&nbsp;
+    <input type="button" value="Body Bg Grey" onclick="divBGGrey()"/>&nbsp;&nbsp;
+    <hr/>
+    <input type="button" value="Body Bg Prompt" onclick="bodyBGDynamic()" />&nbsp;&nbsp;
+    <input type="button" value="Body Bg Prompt" onclick="divBGDynamic()" />&nbsp;&nbsp;
+    <hr/>
+    <input type="color" id="CP1" onchange="bodyBGCP1()" />&nbsp;&nbsp;
+    <input type="color" id="CP2" onchange="bodyBGCP2()" />&nbsp;&nbsp;
+
+
+</body>
+
+</html>
