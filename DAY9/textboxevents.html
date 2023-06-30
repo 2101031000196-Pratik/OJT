@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text box</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#Focus").focus(function(){
+                $(this).css("background-color","red");
+            });
+            $("#TestBlur").blur(function(){
+                $(this).css("background-color","yellow");
+            });
+            $("#KeyPress").keypress(function(){
+                alert($(this).val());
+            });
+            $("#KeyUp").keyup(function(){
+                alert($(this).val());
+            });
+        });
+        
+    </script>
+</head>
+<body>
+    <input type="text" id="Focus" placeholder="focus" /><hr/>
+		<input type="text" id="TestBlur" placeholder="blury" /><hr/>
+		<input type="text" id="KeyPress" placeholder="Check Text Box keypress " /><hr/>
+		<input type="text" id="KeyUp" placeholder="Check Text Box Keyup" /><hr/>
+    
+</body>
+</html>
